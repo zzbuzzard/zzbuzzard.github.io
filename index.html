@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            /* font-family: Arial, sans-serif; */
             background-image: url('images/bg.png');
             background-size: 300px;
             font-family: "Times New Roman", Times, serif;
@@ -18,8 +18,8 @@
             object-fit: cover;
         } */
         .profile-img {
-            width: 150px;
-            height: 150px;
+            width: 170px;
+            height: 170px;
             border-radius: 50%;
             margin-top: -75px;
             border: 5px solid white;
@@ -34,6 +34,13 @@
             flex-direction: column;
             border-radius: 4px; /* 5px rounded corners */
             border-width: 2px;
+            border-color:#4c4c4c
+        }
+        .card-title {
+            font-weight: bold;
+            font-size: 1.25rem;
+            color: #333;
+            /* text-transform: uppercase; */
         }
         .card-body {
           overflow-y: auto;     /* if content might overflow */
@@ -67,13 +74,13 @@
     
     <!-- Project list -->
     <div class="container mt-5">
-        <h2 class="text-center mb-4">My Projects</h2>
+        <h2 class="text-center mb-4">Highlighted Projects</h2>
         <div class="row row-cols-1 row-cols-md-3 g-4 align-items-stretch">            
             <div class="col-md-4">
                 <div class="card mb-4">
                     <img src="project_icons/paths_overall.jpg" class="card-img-top" alt="PATHS">
                     <div class="card-body">
-                        <h5 class="card-title">PATHS - Pathology Transformer with Hierarchical Selection</h5>
+                        <h5 class="card-title">PATHS – Pathology Transformer with Hierarchical Selection</h5>
                         <p class="card-text">Efficient whole slide image analysis using a hierarchical transformer and iterative patch zooming.</p>
                     </div>
                     <div class="card-footer mt-auto">
@@ -88,7 +95,7 @@
                 <div class="card mb-4">
                     <img src="project_icons/PairVDN.png" class="card-img-top" alt="PairVDN">
                     <div class="card-body">
-                        <h5 class="card-title">PairVDN - Pair-wise Decomposed Value Functions</h5>
+                        <h5 class="card-title">PairVDN – Pair-wise Decomposed Value Functions</h5>
                         <p class="card-text">A novel joint value function decomposition for multi-agent reinforcement learning. Improved expressivity, but requires maximisation through dynamic programming.</p>
                     </div>
                     <div class="card-footer mt-auto">
@@ -118,7 +125,7 @@
                 <div class="card mb-4">
                     <img src="project_icons/preview_gif.gif" class="card-img-top" alt="PairVDN">
                     <div class="card-body">
-                        <h5 class="card-title">Box Jump - MARL Environment</h5>
+                        <h5 class="card-title">Box Jump – MARL Environment</h5>
                         <p class="card-text">A fully co-operative multi-agent reinforcement learning environment, with simple per-agent observations, able to scale to many agents. Designed for use with <a href="https://pettingzoo.farama.org/">PettingZoo</a>, and features in their <a href="https://pettingzoo.farama.org/environments/third_party_envs/">third party environment list</a>.</p>
                     </div>
                     <div class="card-footer mt-auto">
@@ -139,7 +146,19 @@
                     </div>
                 </div>
             </div>
-            
+
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="project_icons/ganorama.gif" class="card-img-top" alt="stable-diffusion-infinite-scroll">
+                    <div class="card-body">
+                        <h5 class="card-title">Ganorama</h5>
+                        <p class="card-text">Zero-shot panorama generation from pre-trained GANs by projecting features between cameras for multi-view consistency. Can also be used as a seamless sphere texture generator. </p>
+                    </div>
+                    <div class="card-footer mt-auto">
+                        <a href="https://github.com/zzbuzzard/Ganorama" class="btn btn-primary" target="_blank">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
 
             <div class="col-md-4">
                 <div class="card mb-4">
@@ -186,7 +205,7 @@
                 <div class="card mb-4">
                     <img src="project_icons/whatis.png" class="card-img-top" alt="whatis">
                     <div class="card-body">
-                        <h5 class="card-title">Whatis - PyPI Package</h5>
+                        <h5 class="card-title">Whatis – PyPI Package</h5>
                         <p class="card-text">A tool for explaining strange Python objects given to you in interactive sessions.</p>
                     </div>
                     <div class="card-footer mt-auto">
