@@ -44,6 +44,7 @@
         }
         .card-body {
           overflow-y: auto;
+          font-size: 0.9rem;
         }
 
         .banner {
@@ -54,6 +55,10 @@
             background-attachment: fixed;
         }
 
+        .projects-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
         
     </style>
 </head>
@@ -73,7 +78,7 @@
     </div>
     
     <!-- Project list -->
-    <div class="container mt-5">
+    <div class="container mt-5 projects-container">
         <h2 class="text-center mb-4">Highlighted Projects</h2>
         <div class="row row-cols-1 row-cols-md-3 g-4 align-items-stretch">            
             <div class="col-md-4">
@@ -90,7 +95,6 @@
                 </div>
             </div>
 
-            
             <div class="col-md-4">
                 <div class="card mb-4">
                     <img src="project_icons/PairVDN.png" class="card-img-top" alt="PairVDN">
@@ -105,7 +109,6 @@
                 </div>
             </div>
 
-            
             <div class="col-md-4">
                 <div class="card mb-4">
                     <img src="project_icons/guidediffuseq.png" class="card-img-top" alt="guidediffuseq">
@@ -120,13 +123,12 @@
                 </div>
             </div>
 
-
             <div class="col-md-4">
                 <div class="card mb-4">
                     <img src="project_icons/preview_gif.gif" class="card-img-top" alt="PairVDN">
                     <div class="card-body">
                         <h5 class="card-title">Box Jump – MARL Environment</h5>
-                        <p class="card-text">A fully co-operative multi-agent reinforcement learning environment, with simple per-agent observations, able to scale to many agents. Designed for use with <a href="https://pettingzoo.farama.org/">PettingZoo</a>, and features in their <a href="https://pettingzoo.farama.org/environments/third_party_envs/">third party environment list</a>.</p>
+                        <p class="card-text">Custom multi-agent reinforcement learning environment able to scale to many agents. Designed for use with <a href="https://pettingzoo.farama.org/">PettingZoo</a>, and features in their <a href="https://pettingzoo.farama.org/environments/third_party_envs/">third party environment list</a>.</p>
                     </div>
                     <div class="card-footer mt-auto">
                         <a href="https://github.com/zzbuzzard/boxjump" class="btn btn-primary" target="_blank">View on GitHub</a>
@@ -149,13 +151,13 @@
 
             <div class="col-md-4">
                 <div class="card mb-4">
-                    <img src="project_icons/ganorama.gif" class="card-img-top" alt="stable-diffusion-infinite-scroll">
+                    <img src="project_icons/sd_variant.gif" class="card-img-top" alt="sd-variant-anim">
                     <div class="card-body">
-                        <h5 class="card-title">Ganorama</h5>
-                        <p class="card-text">Zero-shot panorama generation from pre-trained GANs by projecting features between cameras for multi-view consistency. Can also be used as a seamless sphere texture generator. </p>
+                        <h5 class="card-title">Stable Diffusion Variant Animation</h5>
+                        <p class="card-text">Generate random animations where each frame is an image variation of the previous frame. Uses CLIP guidance and a model finetuned to condition on image embeddings.</p>
                     </div>
                     <div class="card-footer mt-auto">
-                        <a href="https://github.com/zzbuzzard/Ganorama" class="btn btn-primary" target="_blank">View on GitHub</a>
+                        <a href="https://github.com/zzbuzzard/sd-variant-anim" class="btn btn-primary" target="_blank">View on GitHub</a>
                     </div>
                 </div>
             </div>
@@ -173,6 +175,18 @@
                 </div>
             </div>
 
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="project_icons/ganorama.gif" class="card-img-top" alt="stable-diffusion-infinite-scroll">
+                    <div class="card-body">
+                        <h5 class="card-title">Ganorama</h5>
+                        <p class="card-text">Zero-shot panorama generation from pre-trained GANs by projecting features between cameras for multi-view consistency. Can also be used as a seamless sphere texture generator. </p>
+                    </div>
+                    <div class="card-footer mt-auto">
+                        <a href="https://github.com/zzbuzzard/Ganorama" class="btn btn-primary" target="_blank">View on GitHub</a>
+                    </div>
+                </div>
+            </div>
 
             <div class="col-md-4">
                 <div class="card mb-4">
